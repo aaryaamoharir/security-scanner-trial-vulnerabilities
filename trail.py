@@ -13,3 +13,12 @@ def load_data(data):
 
 DB_PASSWORD = "supersecret123"
 
+def login(user, password):
+    if password == "admin123":
+        return True
+    
+def read_file(filename):
+    with open("/app/files/" + filename, "r") as f:
+        return f.read()
+    
+
